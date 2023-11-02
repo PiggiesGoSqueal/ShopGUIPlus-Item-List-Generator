@@ -1,0 +1,64 @@
+I'm making a Minecraft server economy with ShopGUIPlus (a spigotmc plugin). 
+
+I will provide you with a list of Minecraft item names in the format "item name" with prices of the relevant item to the right of it on the same line. I want you to take those items and prices then put them into a proper format as I will describe below.
+
+Items & Prices:
+Wheat Seeds	 $ 12.33 
+Wheat	 $ 22.28 
+Carrot	 $ 31.29 
+Potato	 $ 31.29 
+Baked Potato	 $ 36.29  
+Sugar Cane	 $ 22.00 
+Sugar	 $ 32.00 
+Pumpkin	 $ 24.78 
+Pumpkin Seeds	 $ 8.69 
+Melon	 $ 26.39 
+Melon Seeds	 $ 7.71 
+Lily Pad	 $ 142.22 
+Vine	 $ 62.10 
+Cactus	 $ 23.04 
+Green Dye	 $ 28.04  
+Brown Mushroom	 $ 50.25 
+Red Mushroom	 $ 18.01 
+Cocoa Beans	 $ 59.26 
+Brown Dye	 $ 69.26 
+Mushroom Stew	 $ 94.72 
+Apple	 $ 111.41  
+Beetroot	 $ 31.29 
+Red Dye	 $ 41.29 
+Beetroot Soup	 $ 192.00 
+Rabbit Stew	 $ 711.04 
+Cake	 $ 384.00 
+Pumpkin Pie	 $ 140.78 
+Cookie	 $ 14.52 
+Honey Block	 $ 71.11 
+Cooked Cod	 $ 9.48 
+Cooked Salmon	 $ 26.07 
+Pufferfish	 $ 47.41 
+Tropical Fish	 $ 40.30 
+Kelp	 $ 4.27 
+Dried Kelp	 $ 12.11 
+Chorus Fruit	 $ 80.00 
+Popped Chorus Fruit	 $ 85.00 
+Purpur Block	 $ 95.00 
+Chorus Flower	 $ 112.00 
+
+Desired Format:
+      1:
+        type: item
+        item:
+          material: Item_Example_1
+          quantity: 64
+        buyPrice: -1
+        sellPrice: Item_Price_1
+        slot: 0
+      2:
+        type: item
+        item:
+          material: Item_Example_2
+          quantity: 64
+        buyPrice: -1
+        sellPrice: Item_Price_2
+        slot: 1
+
+'Item_Example_1' represents the first item name. Notice the spaces are replaced with underscores. 'Item_Price_1' represents the price for the first item. Notice the first and nineth lines are 1: and 2:. Each new item starts this way and each new item should have a unique number that is +1 higher than the previous item. Similarly, the lines "slot: 0" and "slot: 1" should follow this same format of increasing numbers each item section, but for the "slot: 0" line make the number be minus 1 of the "1:" line. For example, for the 4th item it'd show "4:" and the slot line would be "slot:3". Lastly note the sellPrice: line should NOT include the dollar symbol ($); only the number. 

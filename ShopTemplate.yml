@@ -1,0 +1,18 @@
+  YourCategoryNameHere:
+    name: "Category Name [page %page%/1]"
+    buttons:
+      goBack:
+        slot: 49
+      previousPage:
+        slot: 48
+      nextPage:
+        slot: 50
+    fillItem:
+        material: GRAY_STAINED_GLASS_PANE
+        name: "" 
+    items:
+      #PASTE_THE_CODE_OUTPUT_HERE
+      200:
+        type: special
+        special: BALANCE
+        slot: 53
