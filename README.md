@@ -19,10 +19,11 @@ Author:
 Usage:
 1. Generate a list of Minecraft items and their prices by providing the official item name followed by the price (either in another program then copy/paste or directly in the program). Item names may have spaces but must be official item names to be recognized by ShopGUIPlus properly.
 	- E.g.
-Dirt $3
-Rotten flesh $1
-Chicken $2
-Cooked Chicken $4
+
+	Dirt $3
+	Rotten flesh $1
+	Chicken $2
+	Cooked Chicken $4
 		
 2. Copy and paste the item list into the script, and run it to generate the formatted output.
 		- If you do not have a Python IDE on your computer then use an Online compiler such as: https://www.onlinegdb.com/online_python_compiler
