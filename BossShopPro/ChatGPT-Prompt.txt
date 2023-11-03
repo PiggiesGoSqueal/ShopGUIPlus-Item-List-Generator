@@ -1,0 +1,43 @@
+Generate the code for my Minecraft server economy using BossShopPro. I will provide you with a list of Minecraft item names in the format 'Item Name' with prices of the relevant item to the right of it on the same line. Please convert those items and prices into the following format:
+
+Item List:
+String	3.50
+Spider Eye	3.53
+Egg	3.74
+Chicken	3.77
+Cooked Chicken	4.67
+
+Desired Format:
+Item_Name:
+  MenuItem:
+  - type:Item_Name
+  - amount:1
+  - name:&aItem Name
+  - 'lore1:&7Amount: &a576'
+  - 'lore2:&7Sell For: &aPRICE Resource Points'
+  PriceType: item
+  Price:
+  - - type:Item_Name
+    - amount:576
+  RewardType: POINTS
+  Reward: PRICE
+  Message: '&aYou just sold 576 Item Name for PRICE RP.'
+  ExtraPermission: ''
+Item_Name:
+  MenuItem:
+  - type:Item_Name
+  - amount:1
+  - name:&aItem Name
+  - 'lore1:&7Amount: &a576'
+  - 'lore2:&7Sell For: &aPRICE Resource Points'
+  PriceType: item
+  Price:
+  - - type:Item_Name
+    - amount:576
+  RewardType: POINTS
+  Reward: PRICE
+  Message: '&aYou just sold 576 Item_Name for PRICE RP.'
+  ExtraPermission: ''
+# Continue this pattern for other items
+
+Please ensure that 'Item_Name' and 'PRICE' are replaced with the relevant item names and prices, following the specified format."
