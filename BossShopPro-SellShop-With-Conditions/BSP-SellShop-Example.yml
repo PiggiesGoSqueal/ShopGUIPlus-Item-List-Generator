@@ -1,0 +1,617 @@
+# This example relies on LuckPerms & KingdomsX.
+ShopName: SellShop_MobDrops
+DisplayName: 'Mob Drops'
+signs:
+  text: '[SellMobDrops]'
+  NeedPermissionToCreateSign: true
+Command: 'SellShop MobDrops'
+shop:
+  String:
+    MenuItem:
+    - type:String
+    - amount:1
+    - name:&aSell String
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a11 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:String
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 11
+    - lp user %player% permission settemp bsp.sellshop.cooldown.String true 1h
+    Message: '&aYou just sold 1 inventory of String for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.String 
+    ExtraPermission: ''
+  Egg:
+    MenuItem:
+    - type:Egg
+    - amount:1
+    - name:&aSell Egg
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a11 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Egg
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 11
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Egg true 1h
+    Message: '&aYou just sold 1 inventory of Egg for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Egg 
+    ExtraPermission: ''
+  Cooked_Chicken:
+    MenuItem:
+    - type:Cooked_Chicken
+    - amount:1
+    - name:&aSell Cooked Chicken
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a19 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Cooked_Chicken
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 19
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Cooked_Chicken true 1h
+    Message: '&aYou just sold 1 inventory of Cooked Chicken for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Cooked_Chicken 
+    ExtraPermission: ''
+  Feather:
+    MenuItem:
+    - type:Feather
+    - amount:1
+    - name:&aSell Feather
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a15 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Feather
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 15
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Feather true 1h
+    Message: '&aYou just sold 1 inventory of Feather for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Feather 
+    ExtraPermission: ''
+  Rotten_Flesh:
+    MenuItem:
+    - type:Rotten_Flesh
+    - amount:1
+    - name:&aSell Rotten Flesh
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a16 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Rotten_Flesh
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 16
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Rotten_Flesh true 1h
+    Message: '&aYou just sold 1 inventory of Rotten Flesh for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Rotten_Flesh 
+    ExtraPermission: ''
+  Cooked_Porkchop:
+    MenuItem:
+    - type:Cooked_Porkchop
+    - amount:1
+    - name:&aSell Cooked Porkchop
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a21 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Cooked_Porkchop
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 21
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Cooked_Porkchop true 1h
+    Message: '&aYou just sold 1 inventory of Cooked Porkchop for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Cooked_Porkchop 
+    ExtraPermission: ''
+  Prismarine_Shard:
+    MenuItem:
+    - type:Prismarine_Shard
+    - amount:1
+    - name:&aSell Prismarine Shard
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a20 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Prismarine_Shard
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 20
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Prismarine_Shard true 1h
+    Message: '&aYou just sold 1 inventory of Prismarine Shard for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Prismarine_Shard 
+    ExtraPermission: ''
+  Prismarine_Crystals:
+    MenuItem:
+    - type:Prismarine_Crystals
+    - amount:1
+    - name:&aSell Prismarine Crystals
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a20 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Prismarine_Crystals
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 20
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Prismarine_Crystals true 1h
+    Message: '&aYou just sold 1 inventory of Prismarine Crystals for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Prismarine_Crystals 
+    ExtraPermission: ''
+  Ender_Pearl:
+    MenuItem:
+    - type:Ender_Pearl
+    - amount:1
+    - name:&aSell Ender Pearl
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a22 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Ender_Pearl
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 22
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Ender_Pearl true 1h
+    Message: '&aYou just sold 1 inventory of Ender Pearl for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Ender_Pearl 
+    ExtraPermission: ''
+  Arrow:
+    MenuItem:
+    - type:Arrow
+    - amount:1
+    - name:&aSell Arrow
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a24 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Arrow
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 24
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Arrow true 1h
+    Message: '&aYou just sold 1 inventory of Arrow for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Arrow 
+    ExtraPermission: ''
+  Bone:
+    MenuItem:
+    - type:Bone
+    - amount:1
+    - name:&aSell Bone
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a24 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Bone
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 24
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Bone true 1h
+    Message: '&aYou just sold 1 inventory of Bone for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Bone 
+    ExtraPermission: ''
+  White_Wool:
+    MenuItem:
+    - type:White_Wool
+    - amount:1
+    - name:&aSell White Wool
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a26 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:White_Wool
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 26
+    - lp user %player% permission settemp bsp.sellshop.cooldown.White_Wool true 1h
+    Message: '&aYou just sold 1 inventory of White Wool for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.White_Wool 
+    ExtraPermission: ''
+  Cooked_Mutton:
+    MenuItem:
+    - type:Cooked_Mutton
+    - amount:1
+    - name:&aSell Cooked Mutton
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a31 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Cooked_Mutton
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 31
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Cooked_Mutton true 1h
+    Message: '&aYou just sold 1 inventory of Cooked Mutton for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Cooked_Mutton 
+    ExtraPermission: ''
+  Leather:
+    MenuItem:
+    - type:Leather
+    - amount:1
+    - name:&aSell Leather
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a35 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Leather
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 35
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Leather true 1h
+    Message: '&aYou just sold 1 inventory of Leather for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Leather 
+    ExtraPermission: ''
+  Cooked_Beef:
+    MenuItem:
+    - type:Cooked_Beef
+    - amount:1
+    - name:&aSell Cooked Beef
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a42 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Cooked_Beef
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 42
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Cooked_Beef true 1h
+    Message: '&aYou just sold 1 inventory of Cooked Beef for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Cooked_Beef 
+    ExtraPermission: ''
+  Rabbit_Hide:
+    MenuItem:
+    - type:Rabbit_Hide
+    - amount:1
+    - name:&aSell Rabbit Hide
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a48 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Rabbit_Hide
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 48
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Rabbit_Hide true 1h
+    Message: '&aYou just sold 1 inventory of Rabbit Hide for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Rabbit_Hide 
+    ExtraPermission: ''
+  Cooked_Rabbit:
+    MenuItem:
+    - type:Cooked_Rabbit
+    - amount:1
+    - name:&aSell Cooked Rabbit
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a51 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Cooked_Rabbit
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 51
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Cooked_Rabbit true 1h
+    Message: '&aYou just sold 1 inventory of Cooked Rabbit for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Cooked_Rabbit 
+    ExtraPermission: ''
+  Rabbit_Foot:
+    MenuItem:
+    - type:Rabbit_Foot
+    - amount:1
+    - name:&aSell Rabbit Foot
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a1398 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Rabbit_Foot
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 1398
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Rabbit_Foot true 1h
+    Message: '&aYou just sold 1 inventory of Rabbit Foot for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Rabbit_Foot 
+    ExtraPermission: ''
+  Scute:
+    MenuItem:
+    - type:Scute
+    - amount:1
+    - name:&aSell Scute
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a73 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Scute
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 73
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Scute true 1h
+    Message: '&aYou just sold 1 inventory of Scute for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Scute 
+    ExtraPermission: ''
+  Slime_Ball:
+    MenuItem:
+    - type:Slime_Ball
+    - amount:1
+    - name:&aSell Slime Ball
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a102 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Slime_Ball
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 102
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Slime_Ball true 1h
+    Message: '&aYou just sold 1 inventory of Slime Ball for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Slime_Ball 
+    ExtraPermission: ''
+  Magma_Cream:
+    MenuItem:
+    - type:Magma_Cream
+    - amount:1
+    - name:&aSell Magma Cream
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a47 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Magma_Cream
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 47
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Magma_Cream true 1h
+    Message: '&aYou just sold 1 inventory of Magma Cream for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Magma_Cream 
+    ExtraPermission: ''
+  Ink_Sac:
+    MenuItem:
+    - type:Ink_Sac
+    - amount:1
+    - name:&aSell Ink Sac
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a73 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Ink_Sac
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 73
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Ink_Sac true 1h
+    Message: '&aYou just sold 1 inventory of Ink Sac for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Ink_Sac 
+    ExtraPermission: ''
+  Gunpowder:
+    MenuItem:
+    - type:Gunpowder
+    - amount:1
+    - name:&aSell Gunpowder
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a108 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Gunpowder
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 108
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Gunpowder true 1h
+    Message: '&aYou just sold 1 inventory of Gunpowder for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Gunpowder 
+    ExtraPermission: ''
+  Phantom_Membrane:
+    MenuItem:
+    - type:Phantom_Membrane
+    - amount:1
+    - name:&aSell Phantom Membrane
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a135 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Phantom_Membrane
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 135
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Phantom_Membrane true 1h
+    Message: '&aYou just sold 1 inventory of Phantom Membrane for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Phantom_Membrane 
+    ExtraPermission: ''
+  Gold_Sword:
+    MenuItem:
+    - type:Gold_Sword
+    - amount:1
+    - name:&aSell Gold Sword
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a1 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Gold_Sword
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 1
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Gold_Sword true 1h
+    Message: '&aYou just sold 1 inventory of Gold Sword for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Gold_Sword 
+    ExtraPermission: ''
+  Gold_Nugget:
+    MenuItem:
+    - type:Gold_Nugget
+    - amount:1
+    - name:&aSell Gold Nugget
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a18 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Gold_Nugget
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 18
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Gold_Nugget true 1h
+    Message: '&aYou just sold 1 inventory of Gold Nugget for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Gold_Nugget 
+    ExtraPermission: ''
+  Gold_Ingot:
+    MenuItem:
+    - type:Gold_Ingot
+    - amount:1
+    - name:&aSell Gold Ingot
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a161 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Gold_Ingot
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 161
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Gold_Ingot true 1h
+    Message: '&aYou just sold 1 inventory of Gold Ingot for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Gold_Ingot 
+    ExtraPermission: ''
+  Shulker_Shell:
+    MenuItem:
+    - type:Shulker_Shell
+    - amount:1
+    - name:&aSell Shulker Shell
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a403 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Shulker_Shell
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 403
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Shulker_Shell true 1h
+    Message: '&aYou just sold 1 inventory of Shulker Shell for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Shulker_Shell 
+    ExtraPermission: ''
+  Wither_Rose:
+    MenuItem:
+    - type:Wither_Rose
+    - amount:1
+    - name:&aSell Wither Rose
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &a45 Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Wither_Rose
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add 45
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Wither_Rose true 1h
+    Message: '&aYou just sold 1 inventory of Wither Rose for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Wither_Rose 
+    ExtraPermission: ''
