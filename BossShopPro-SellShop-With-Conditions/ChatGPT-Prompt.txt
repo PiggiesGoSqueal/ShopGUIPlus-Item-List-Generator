@@ -1,0 +1,64 @@
+===================
+NOTE:
+I did have to discuss with ChatGPT a bit to get this to output properly. And I had to make a couple edits to the Python code.
+===================
+I'm making a Minecraft server economy. Generate a Python script that will generate the proper formatting for my Sell Shop of my Minecraft server economy using BossShopPro (a spigotmc plugin). 
+
+I will provide you with a list of Minecraft item names in the format 'Item Name' with Item Worth of the relevant item to the right of it on the same line.
+
+Item List:
+Wheat Seeds	11.09
+Wheat	20.05
+Carrot	28.16
+Potato	28.16
+Sugar Cane	19.80
+Pumpkin	22.30
+Melon	23.75
+Cactus	20.74
+Brown Mushroom	42.23
+Red Mushroom	16.21
+Beetroot	28.16
+Cake	12.00
+Pumpkin Pie	50.00
+Cookie	13.07
+Honey Bottle	4.00
+Cooked Cod	8.53
+Cooked Salmon	23.47
+Pufferfish	42.67
+Tropical Fish	36.27
+Kelp	11.00
+
+Please convert those items and prices to be within the following BossShopPro config format.
+
+Desired Format:
+  Item_Name:
+    MenuItem:
+    - type:Item_Name
+    - amount:1
+    - name:&aSell Item Name
+    - 'lore1:&7Amount: &a2304'
+    - 'lore2:&7Sell For: &aITEM_WORTH Resource Points'
+    - 'lore3:&7Cooldown: &a1 Hour'
+    PriceType: item
+    Price:
+    - - type:Item_Name
+      - amount:2304
+    RewardType: COMMAND
+    Reward:
+    - k admin resourcepoints %kingdoms_name% add ITEM_WORTH
+    - lp user %player% permission settemp bsp.sellshop.cooldown.Item_Name true 1h
+    Message: '&aYou just sold 1 inventory of Item_Name for %price% RP.'
+    Condition:
+    - type:permission
+    - dontmatch:bsp.sellshop.cooldown.Item_Name 
+    ExtraPermission: ''
+  # Continue this pattern for other items
+
+Things to Replace:
+1. Every mention of "Item_Name" should be replaced with the relevant item name (e.g. "Wheat_Seeds").
+2. Where it says "name:&aSell Item Name" replace the "Item Name" portion with the relevant item name but instead of having an underscore (if relevant) it will have a space.
+3. Replace every mention of ITEM_WORTH with the relevant item's item worth (AKA the number to the right of it in the provided item list). However, first round the number to the nearest whole number.
+4. For both sections that mention "- amount:" and then a number- leave it alone! I do not want them modified!! Let me repeat- leave them untouched! Amount and rewards are SEPARATE. 
+5. For the line stating "'lore1:&7Amount: &a2304'" leave the amount alone. I want it to be 2304 there. Do not touch it.
+
+Double check your code for all types of errors before providing it to me. 
